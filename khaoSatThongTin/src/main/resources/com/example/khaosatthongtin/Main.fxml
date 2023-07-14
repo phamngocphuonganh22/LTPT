@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.khaosatthongtin.HelloController"
+            prefHeight="400.0" prefWidth="600.0">
+    <HBox>
+        <Label text="cau1: 1+1=?"/>
+        <RadioButton text="1" fx:id="A">
+            <toggleGroup>
+                <ToggleGroup fx:id="toggle"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton text="2" toggleGroup="$toggle" fx:id="A1"/>
+        <RadioButton text="3" toggleGroup="$toggle" fx:id="A2"/>
+        <Button text="submit" fx:id="submit" onAction="#onHelloButtonClick"/>
+    </HBox>
+            
+</AnchorPane>
